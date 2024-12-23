@@ -43,7 +43,6 @@ pipeline {
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://34.87.163.238:9000 \
                         -Dsonar.token=sqp_274673b02985fa2924d4bc517680170c8ecd9388
-                        sonar-scanner \
                     ''' // Run SonarQube analysis for JavaScript
                 }
             }
