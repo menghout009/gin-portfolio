@@ -39,11 +39,11 @@ pipeline {
                 withSonarQubeEnv('SonarQube') { // Use the configured SonarQube environment 'SonarQube'
                     sh '''
                         npx sonar-scanner \
-                        -Dsonar.projectKey=React-demo \
-                        -Dsonar.projectName=ReactApp \
+                        -Dsonar.projectKey=Portfolio \
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://34.87.163.238:9000 \
-                        -Dsonar.login=sqp_bbcfe788bdcb0351d9fd0156b0564b0e1058a827
+                        -Dsonar.token=sqp_274673b02985fa2924d4bc517680170c8ecd9388
+                        sonar-scanner \
                     ''' // Run SonarQube analysis for JavaScript
                 }
             }
