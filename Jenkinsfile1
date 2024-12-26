@@ -70,11 +70,11 @@ pipeline {
     post {
         success {
             echo "✅ Pipeline completed successfully for ${env.JOB_NAME}." 
-           echo " 🔗 Result ${SONARQUBE_URL}/dashboard?id=${PROJECT_KEY} "
+           echo " 🔗 You can find the results at ${SONARQUBE_URL}/dashboard?id=${PROJECT_KEY} "
         }
         failure {
             echo "❌ Pipeline failed. Check logs for details."
-            echo " 🔗 Result ${SONARQUBE_URL}/dashboard?id=${PROJECT_KEY} "
+            echo " 🔗 you can find the results at ${SONARQUBE_URL}/dashboard?id=${PROJECT_KEY} "
         }
         always {
             echo "Pipeline execution finished."
